@@ -1,0 +1,79 @@
+@charset "utf-8";
+.gddes {
+	width: 667px;
+	padding: 40px;
+	margin:  0 0 0 3px;
+	background-color: #fcfcfc;
+}
+.norms .norms-span {
+	font: 14px/26px "微软雅黑";
+}
+.norms .norms-con {
+	width: 588px;
+	margin-left: 5px;
+}
+.norms-con .norms-a {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	line-height: 24px;
+	float: left;
+	color: #333;
+	margin: 0 5px 5px 0;
+}
+.norms-con .norms-a .goods-selected {
+	display: block;
+	width: 17px;
+	height: 16px;
+	background: url(../img/goods-select.png) no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.norms-con .cgnum {
+	display: inline-block;
+	border: 1px solid #b2b2b2;
+	margin-right: 10px;
+}
+.norms-con .cgnum .chgnum {
+	display: block;
+	line-height: 32px;
+	width: 17px;
+	float: left;
+	border: 1px solid #fff;
+	text-align: center;
+	background-color: #f3f3f3;
+	cursor: pointer;
+}
+.norms-con .cgnum .buynum {
+	width: 50px;
+	height: 32px;
+	font-size: 12px;
+	text-align: center;
+	border: 1px solid #f3f3f3;
+	outline: none;
+	padding: 0 0 0 2px;
+	line-height: 22px;
+}
+.norms-con .mt {
+	line-height: 34px;
+	display: inline-block;
+}
+.add-buycart {
+	margin-top: 15px;
+	width: 190px;
+	height: 56px;
+	background-color: #78b300;
+	text-align: center;
+	line-height: 56px;
+	border-radius: 3px;
+}
+.add-buycart .buycart-a {
+	 color: #fff;
+	 font-size: 20px;
+}
+.stock-num {
+	display: inline-block;
+	line-height: 34px;
+}
