@@ -17,7 +17,6 @@ $(function(){
 		},
 		//小圆圈初始化
 		creat: function(){
-		     console.log(this.imgs);
 			 for(var i=1;i<=this.imgs.length;i++){
 	        	$('.circle-content').append($('<div class="circle-item">'+ i +'</div>'));
 	        }
