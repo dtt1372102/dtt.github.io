@@ -82,5 +82,16 @@ img,a img {
 .bottom-b {
 	text-align: center;
 }
-
+.pad10 {
+    padding: 10px;
+}
+.textR {
+	text-align: right;
+}
+.c999 {
+	color: #999;
+}
+.cf60 {
+	color: #f60;
+}
 

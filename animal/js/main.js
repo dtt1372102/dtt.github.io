@@ -13,6 +13,9 @@ $(function(){
 			this.surprise();
 			this.surpriseImg();
 			this.surImg();
+			this.create();
+			this.rising();
+			this.hover();
 		},
 		//关闭刚打开出现的模态框
 		close: function(){			
@@ -101,6 +104,54 @@ $(function(){
 				$(this).stop(true).animate({
 					top: 0
 				},500);
+			});
+		},
+		//生成品牌街中间的的列表
+		create: function(){
+			var content = ''
+			for(var i=1;i<=12;i++){
+				content += '<li>'
+		 				+	'<a href="#" target="_blank" class="rising">'
+		 				+		'<img src="img/c'+ i +'.jpg" />'
+		 				+	'</a>'
+		 				+	'<p>'
+		 				+		'<span class="cred">5</span>'
+		 				+		'个试用商品 '
+		 				+	'</p>'
+		 				+'</li>'
+			}
+			$('.brands-list>ul').append(content);
+		},
+		//品牌街中间的的列表底部缓缓升起
+		rising: function(){
+			$('.rising').hover(function(){
+				console.log($(this));
+				$(this).next('p').show().stop(true).animate({
+					height: 30
+				},600);
+			},function(){
+				$(this).next('p').stop(true).animate({
+					height: 0
+				},600);
+			});
+		},
+		//狗狗主粮选项卡
+		hover: function(){
+			var that = this;
+			$('.lib-menu').find('li').mouseenter(function(){
+				var index = $('.lib-menu>li').index($(this));
+				$(this).addClass('hover').siblings().removeClass('hover');
+				$(this).parent().parent().next().children().hide();
+				$(this).parent().parent().next().children().eq(index).show();
+			});
+			$('.eight-proming img').hover(function(){
+				$(this).stop(true).animate({
+					top: -10
+				},400);
+			},function(){
+				$(this).stop(true).animate({
+					top: 0
+				},400);
 			});
 		}
 	};
